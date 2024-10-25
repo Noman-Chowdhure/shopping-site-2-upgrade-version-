@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "client_name": "Sarah Johnson",
+        "product": "Wireless Earbuds",
+        "photo": "https://i.pinimg.com/564x/dc/c4/00/dcc4001de71b42b01e9fc706d2e67cf5.jpg",
+        "comment": "I received these earbuds quickly, and they exceeded my expectations! Excellent sound quality and battery life.",
+        "button": "read"
+    },
+    {
+        "id": 2,
+        "client_name": "Emily Davis",
+        "product": "Smartwatch",
+        "photo": "https://i.pinimg.com/564x/dc/c4/00/dcc4001de71b42b01e9fc706d2e67cf5.jpg",
+        "comment": "Fast shipping! The smartwatch is very user-friendly and tracks my fitness goals perfectly.",
+        "button": "read"
+    },
+    {
+        "id": 3,
+        "client_name": "Jessica Lee",
+        "product": "Blender",
+        "photo": "https://i.pinimg.com/564x/dc/c4/00/dcc4001de71b42b01e9fc706d2e67cf5.jpg",
+        "comment": "Superb blender! It arrived on time and blends everything smoothly. Worth every penny!",
+        "button": "read"
+    },
+    {
+        "id": 4,
+        "client_name": "Megan Smith",
+        "product": "Yoga Mat",
+        "photo": "https://i.pinimg.com/564x/dc/c4/00/dcc4001de71b42b01e9fc706d2e67cf5.jpg",
+        "comment": "Quick delivery! This yoga mat is durable and provides great support during workouts.",
+        "button": "read"
+    },
+    {
+        "id": 5,
+        "client_name": "Laura Brown",
+        "product": "Coffee Maker",
+        "photo": "https://i.pinimg.com/564x/dc/c4/00/dcc4001de71b42b01e9fc706d2e67cf5.jpg",
+        "comment": "Arrived in perfect condition. This coffee maker brews delicious coffee every morning!",
+        "button": "read"
+    },
+    {
+        "id": 6,
+        "client_name": "Rachel Green",
+        "product": "Bluetooth Speaker",
+        "photo": "https://i.pinimg.com/564x/dc/c4/00/dcc4001de71b42b01e9fc706d2e67cf5.jpg",
+        "comment": "Loved the speedy shipping! The speaker has impressive sound quality and is easy to connect.",
+        "button": "read"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1",
+      "name": "Elegant Evening Gown",
+      "details": "A stunning evening gown made of silk with intricate beading and a flowing train.",
+      "rating": 4.8,
+      "image": "https://i.pinimg.com/236x/79/f7/4c/79f74c23109afe132e9e036e8a3b857f.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Casual Summer Dress",
+      "details": "A light and breezy summer dress made from cotton, featuring a floral print and adjustable straps.",
+      "rating": 4.5,
+      "image": "https://i.pinimg.com/236x/79/f7/4c/79f74c23109afe132e9e036e8a3b857f.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Business Suit Dress",
+      "details": "A tailored dress suitable for business meetings, made of high-quality wool with a structured fit.",
+      "rating": 4.7,
+      "image": "https://i.pinimg.com/236x/79/f7/4c/79f74c23109afe132e9e036e8a3b857f.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Bohemian Maxi Dress",
+      "details": "A flowing maxi dress with a bohemian print and comfortable elastic waistband.",
+      "rating": 4.6,
+      "image": "https://i.pinimg.com/236x/79/f7/4c/79f74c23109afe132e9e036e8a3b857f.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Cocktail Party Dress",
+      "details": "A chic cocktail dress with a fitted bodice and a flared skirt, perfect for evening events.",
+      "rating": 4.9,
+      "image": "https://i.pinimg.com/236x/79/f7/4c/79f74c23109afe132e9e036e8a3b857f.jpg"
+    }
+  ]
+  
