@@ -5,6 +5,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import Man from "./component/manPage/Man";
 import Admin from "./component/admin/Admin";
 import Women from "./component/womenPage/Women";
+import ProductDetils from "./component/common/ProductDetils";
 
 const locomotiveScroll = new LocomotiveScroll();
 
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
         {
           path:'/women',
           element:<Women></Women>
+        },
+        {
+          path:'/productDetils/:id',
+          element:<ProductDetils></ProductDetils>,
+          loader:({params})=>fetch(`http://localhost:3000/man/${params.id}`)
         },
        { path:'/admin',
             element:<Admin></Admin>

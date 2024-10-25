@@ -17,6 +17,11 @@ h1 span
    @apply bg-slate-700 text-white transition-all delay-150 duration-150;
  }
  
+
+ .btnn {
+   @apply border-[1px] border-zinc-400 rounded-3xl px-5 py-1 font-mono uppercase
+ }
+
 #heros p
 {
    writing-mode:tb-rl;

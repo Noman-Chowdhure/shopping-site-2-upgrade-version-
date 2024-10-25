@@ -7,11 +7,14 @@ gsap.registerPlugin(ScrollTrigger);
 const ProductMan = () => {
     const [product,setProduct] = useState([])
      useEffect(()=>{
-       fetch('man.json')
+       fetch('http://localhost:3000/man')
         .then(res => res.json())
-        .then(data => setProduct(data));
+        .then(data => setProduct(data.slice(0,10)));
      },[])
      console.log(product)
+     const addToCart = () =>{
+       console.log('hello world..')
+     }
     // useGSAP(()=>{
     //     gsap.from('#prouductMan',{
     //         transform:'translate(-100%)',
@@ -33,7 +36,7 @@ const ProductMan = () => {
       <h1>out proudct's</h1>
       <div className="items grid md:grid-cols-5 grid-cols-2 justify-center justify-items-center items-center">
         {
-          product.map(abc => <ProductCard key={abc.id} itmes={abc}></ProductCard>)
+          product.map(abc => <ProductCard addToCart={addToCart} key={abc.id} itmes={abc}></ProductCard>)
         }
       </div>
     </div>
