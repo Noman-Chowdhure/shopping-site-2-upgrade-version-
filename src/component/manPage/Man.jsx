@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 
-import ProductMan from './ProductMan'
-import Heros from '../shread/Heros'
-import Slider from '../shread/Slider'
-import AboutAll from '../shread/AboutAll'
+import AboutAll from "../shread/AboutAll";
+import Heros from "../shread/Heros";
+import Slider from "../shread/Slider";
+import ProductMan from "./ProductMan";
 
 const Man = () => {
   return (
-    <div className=' overflow-x-hidden'>
-        <Heros head='man'></Heros>
-        <Slider></Slider>
-        <AboutAll aboutt='man page'></AboutAll>
-        <ProductMan></ProductMan>
+    <div className=" overflow-x-hidden">
+      <Heros head="man"></Heros>
+      <Slider></Slider>
+      <AboutAll aboutt="man page"></AboutAll>
+      <ProductMan></ProductMan>
     </div>
-  )
-}
+  );
+};
 
-export default Man
+export default Man;

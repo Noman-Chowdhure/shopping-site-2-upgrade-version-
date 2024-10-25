@@ -10,10 +10,10 @@ const firebaseConfig = {
   projectId: "shopping-site-1d6ce",
   storageBucket: "shopping-site-1d6ce.appspot.com",
   messagingSenderId: "144998261343",
-  appId: "1:144998261343:web:e17eaea8f8047f1b5631ea"
+  appId: "1:144998261343:web:e17eaea8f8047f1b5631ea",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-export default app
+export default app;

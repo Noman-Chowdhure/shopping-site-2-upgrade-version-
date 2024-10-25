@@ -1,11 +1,11 @@
-import { createBrowserRouter } from "react-router-dom";
-import Layout from "./layout/Layout";
-import Landing from "./component/landingPage/Landing";
 import LocomotiveScroll from 'locomotive-scroll';
-import Man from "./component/manPage/Man";
+import { createBrowserRouter } from "react-router-dom";
 import Admin from "./component/admin/Admin";
-import Women from "./component/womenPage/Women";
 import ProductDetils from "./component/common/ProductDetils";
+import Landing from "./component/landingPage/Landing";
+import Man from "./component/manPage/Man";
+import Women from "./component/womenPage/Women";
+import Layout from "./layout/Layout";
 
 const locomotiveScroll = new LocomotiveScroll();
 

@@ -1,5 +1,5 @@
-import React from 'react'
-import { useLoaderData } from 'react-router-dom'
+import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const ProductDetils = () => {
     const information = useLoaderData();
@@ -7,8 +7,8 @@ const ProductDetils = () => {
   return (
     <div className=' grid grid-cols-2 justify-center justify-items-center w-full h-full gap-10 md:gap-20'>
       <div className="img-section">
-
-      </div>
+ 
+             </div>
       <div className="text-section space-y-5">
        <h1 className=' text-4xl capitalize font-safari border-b-[1px] py-2 border-zinc-600'>{name}</h1>
        <p className=' font-mono text-sm lowercase'>{details}</p>
