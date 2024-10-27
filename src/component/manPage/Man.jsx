@@ -7,7 +7,7 @@ import ProductMan from "./ProductMan";
 
 const Man = () => {
   return (
-    <div className=" overflow-x-hidden">
+    <div className=" overflow-hidden">
       <Heros head="man"></Heros>
       <Slider></Slider>
       <AboutAll aboutt="man page"></AboutAll>
