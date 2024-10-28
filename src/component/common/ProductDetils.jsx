@@ -49,7 +49,9 @@ const ProductDetils = () => {
             </div>
 
             <div className="counter flex gap-4 items-center btnn">
-              <button onClick={() => setCout((cout) => cout - 1)}>
+              <button
+                onClick={() => setCout((cout) => (cout == 0 ? 0 : cout - 1))}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -66,7 +68,9 @@ const ProductDetils = () => {
                 </svg>
               </button>
               <p>{cout}</p>
-              <button onClick={() => setCout((cout) => cout + 1)}>
+              <button
+                onClick={() => setCout((cout) => (cout === 4 ? 0 : cout + 1))}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

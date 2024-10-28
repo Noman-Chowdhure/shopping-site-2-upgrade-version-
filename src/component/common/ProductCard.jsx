@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
-const ProductCard = ({itmes,addToCart}) => {
+const ProductCard = ({itmes}) => {
     const {name,title,image,id} = itmes
 
   return (

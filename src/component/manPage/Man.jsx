@@ -1,5 +1,4 @@
 import React from "react";
-
 import AboutAll from "../shread/AboutAll";
 import Heros from "../shread/Heros";
 import Slider from "../shread/Slider";
