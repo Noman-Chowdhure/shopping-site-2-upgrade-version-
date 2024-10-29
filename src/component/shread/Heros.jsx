@@ -3,7 +3,7 @@ const Heros = ({ head }) => {
   return (
     <div>
       <div className=" w-full h-[50vh] block flex items-center justify-center justify-items-center">
-        <h1 className=" md:text-9xl text-4xl uppercase font-extrabold font-mono">
+        <h1 className=" md:text-9xl text-4xl uppercase font-extrabold ">
           here you get {head} product
         </h1>
         <div className="bumy">

@@ -3,6 +3,7 @@ import AboutAll from "../shread/AboutAll";
 import Heros from "../shread/Heros";
 import Slider from "../shread/Slider";
 import ProductMan from "./ProductMan";
+import Fotter from "../shread/Fotter";
 
 const Man = () => {
   return (
@@ -11,6 +12,7 @@ const Man = () => {
       <Slider></Slider>
       <AboutAll aboutt="man page"></AboutAll>
       <ProductMan></ProductMan>
+      <Fotter></Fotter>
     </div>
   );
 };

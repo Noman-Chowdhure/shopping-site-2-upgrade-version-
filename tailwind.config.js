@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily:{
         mono:"'Pacifico', cursive",
-        safari:"'Edu AU VIC WA NT Dots',cursive"
+        safari:"'Edu AU VIC WA NT Dots',cursive",
       }
     },
   },

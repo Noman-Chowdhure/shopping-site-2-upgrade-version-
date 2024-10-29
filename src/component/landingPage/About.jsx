@@ -19,8 +19,9 @@ const About = () => {
         end: "top -100%",
       },
     });
+
     gsap.to("#topNav",{
-      scale:2.0,
+      scale:4.0,
       scrollTrigger:{
         trigger:'#topNav',
         scroller:'body',
@@ -46,13 +47,14 @@ const About = () => {
     <div className=" p-4" id="about">
       <h1
         id="topNav"
-        className=" my-8 xl:text-6xl md:text-4xl capitalize font-light font-mono"
+        className=" my-8 xl:text-6xl md:text-4xl capitalize font-extrabold"
       >
         we make sure your product & creation deliverd porperly...
       </h1>
-      <div className="content w-full h-fit grid grid-cols-2 md:gird-cols-1 gap-10 justify-center justify-items-center">
+
+      <div id="content" className=" w-full h-fit grid grid-cols-2 md:gird-cols-1 gap-10 justify-center justify-items-center">
         <div className="eyes max-sm:hidden">
-          <h1 id="heading">about us</h1>
+          <h1 className=" uppercase font-serif border-b-2 text-xl">about us</h1>
           <Eyes></Eyes>
         </div>
         <div className="text-content max-sm:col-span-2 space-y-4">

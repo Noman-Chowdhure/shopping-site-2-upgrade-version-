@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 const ProductCard = ({itmes}) => {
     const {name,title,image,id} = itmes
-
+    console.log(itmes)
   return (
     <Link to={`/productDetils/${id}`}>
      

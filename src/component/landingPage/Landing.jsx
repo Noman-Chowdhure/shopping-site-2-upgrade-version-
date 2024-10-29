@@ -4,6 +4,7 @@ import Slider from "./Slider";
 import About from "./About";
 import Category from "./Category";
 import Clint from "./Clint";
+import Fotter from "../shread/Fotter";
 
 const Landing = () => {
   return (
@@ -13,6 +14,7 @@ const Landing = () => {
       <About></About>
       <Category></Category>
       <Clint></Clint>
+      <Fotter></Fotter>
     </div>
   );
 };
