@@ -1,6 +1,7 @@
 import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
 import { useForm } from 'react-hook-form';
 import app from '../../firebase/firebase.config';
+import Panel from './Panel';
 
 const Admin = () => {
   const {
@@ -14,7 +15,13 @@ const Admin = () => {
   const onSubmit = (data) => {
     const { email, password } = data;
     console.log(email, password);
-    
+    if(email == 'jyaffa1233@gmail.com' && password === 123 )
+    {
+      <Panel></Panel>
+    }
+    else{
+      console.log('plz try again...')
+    }
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         const user = result.user;

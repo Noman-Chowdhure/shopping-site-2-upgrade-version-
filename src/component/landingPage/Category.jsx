@@ -1,18 +1,41 @@
 import { useGSAP } from "@gsap/react";
-import { Link } from "react-router-dom";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Category = () => {
+  useGSAP(() => {
+    gsap.from("#cate", {
+      y: -200,
+      opacity: 0,
+      duration:2,
+      scale:0,
+      scrollTrigger: {
+        trigger: "#cate",
+        scroller: "body",
+        start: "top 60%",
+        end: "top -100%",
+      },
+    });
+  }, []);
   return (
-    <div className=" bg-zinc-900 p-8 w-full h-full rounded-tr-3xl rounded-tl-3xl">
+    <div
+      id="cate"
+      className=" bg-zinc-900 p-8 w-full h-full rounded-tr-3xl rounded-tl-3xl"
+    >
       <div className="heading border-b-[2px]">
         <h1 className=" text-4xl md:text-6 xl:text-9xl font-mono capitalize text-white font-light">
           category
         </h1>
       </div>
       <div className="nav grid grid-cols-2 justify-center justify-items-center  my-8">
-        {["man", "woman"].map((abc) => (
-          <Link className=" text-orange-500 text-3xl capitalize" to={abc}>
+        {["man", "woman"].map((abc, ind) => (
+          <Link
+            key={abc.ind}
+            className=" text-orange-500 text-3xl capitalize"
+            to={abc}
+          >
             {abc}
           </Link>
         ))}

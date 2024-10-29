@@ -21,7 +21,7 @@ const ProductDetils = () => {
   return (
     <div className=" grid grid-cols-2 justify-center justify-items-center w-full h-full gap-10 md:gap-20">
       <div className="img-section">
-        <img src={image} alt="" />
+        <img className=" mix-blend-darken" src={image} alt="" />
       </div>
       <div className="text-section grid grid-cols-2 justify-center items-center">
         <div className="detils space-y-4">

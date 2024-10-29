@@ -19,6 +19,16 @@ const About = () => {
         end: "top -100%",
       },
     });
+    gsap.to("#topNav",{
+      scale:2.0,
+      scrollTrigger:{
+        trigger:'#topNav',
+        scroller:'body',
+        start:"top 60%",
+        end:"top -100%",
+        scrub:true
+      }
+    })
     gsap.from("#ol li", {
       x: -300,
       opacity: 0,

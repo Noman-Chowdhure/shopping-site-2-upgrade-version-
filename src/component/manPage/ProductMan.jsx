@@ -32,7 +32,7 @@ const ProductMan = () => {
 
   return (
     <div id="prouductMan" className=" w-full h-full p-8">
-      <h1>out proudct's</h1>
+      <h1 className=" uppercase text-[11vw] font-extrabold text-zinc-400">our proudct's</h1>
       <div className="items grid md:grid-cols-5 grid-cols-2 justify-center justify-items-center items-center">
         {product.map((abc) => (
           <ProductCard

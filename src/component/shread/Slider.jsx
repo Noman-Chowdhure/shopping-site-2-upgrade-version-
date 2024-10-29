@@ -1,7 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import React from "react";
 gsap.registerPlugin(ScrollTrigger);
 const Slider = () => {
   useGSAP(() => {
@@ -39,9 +38,9 @@ const Slider = () => {
       <h1 className=" absolute vertical ">look asomewe</h1>
       <div className="box grid grid-rows-4 grid-cols-1 gap-10 md:gap-20 w-full h-fit justify-center justify-items-center">
         <div className="child grid grid-cols-3">
-          <div id="img" className="img-path col-span-2 w-full">
+          <div id="img" className="img-path  col-span-2 w-full">
             <img
-              className=" object-contain"
+              className=" mix-blend-darken  object-contain"
               src="https://i.pinimg.com/564x/a4/6f/42/a46f42bca41a2e729e523e5e6060a014.jpg"
               alt=""
             />
@@ -76,7 +75,7 @@ const Slider = () => {
 
           <div id="img" className="img-path col-span-2 w-full">
             <img
-              className=" object-contain"
+              className=" mix-blend-darken object-contain"
               src="https://i.pinimg.com/564x/a4/6f/42/a46f42bca41a2e729e523e5e6060a014.jpg"
               alt=""
             />
@@ -86,7 +85,7 @@ const Slider = () => {
         <div className="child grid grid-cols-3">
           <div id="img" className="img-path col-span-2 w-full">
             <img
-              className=" object-contain"
+              className=" mix-blend-darken object-contain"
               src="https://i.pinimg.com/564x/a4/6f/42/a46f42bca41a2e729e523e5e6060a014.jpg"
               alt=""
             />
@@ -119,7 +118,7 @@ const Slider = () => {
           </div>
           <div id="img" className="img-path col-span-2 w-full">
             <img
-              className=" object-contain"
+              className=" mix-blend-darken object-contain"
               src="https://i.pinimg.com/564x/a4/6f/42/a46f42bca41a2e729e523e5e6060a014.jpg"
               alt=""
             />

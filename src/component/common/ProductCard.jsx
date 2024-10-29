@@ -10,12 +10,12 @@ const ProductCard = ({itmes}) => {
   return (
     <Link to={`/productDetils/${id}`}>
      
-     <div id='card' className=' bg-slate-100 w-full h-full p-5 shadow-lg flex'>
+     <div id='card' className=' bg-slate-100 w-full  p-5 rounded-3xl shadow-lg flex'>
       <div className="slide">
         30% off
       </div>
       <div className="box">
-        <img src="https://i.pinimg.com/564x/24/a5/c2/24a5c2fe42201494dfe5cf71280b7845.jpg" alt="" />
+        <img className=' mix-blend-darken' src={image} alt="" />
         <h1>{name}</h1>
         <p>{title}</p>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"   className="size-6">
