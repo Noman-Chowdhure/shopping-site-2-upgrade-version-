@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast, { ToastBar, Toaster } from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 
 const ProductDetils = () => {
@@ -16,7 +17,14 @@ const ProductDetils = () => {
       body: JSON.stringify(information),
     })
       .then((res) => res.json())
-      .then((infor) => console.log(infor));
+      .then((infor) => {
+        console.log(infor);
+        if(infor.insertedId) {
+          toast.success('product has been added..')
+        } else{
+          toast.error('try again leter..')
+        }
+      });
   };
   return (
     <div className=" grid grid-cols-2 justify-center justify-items-center w-full h-full gap-10 md:gap-20">
@@ -46,6 +54,7 @@ const ProductDetils = () => {
                 {" "}
                 add to cart
               </button>
+              <Toaster></Toaster>
             </div>
 
             <div className="counter flex gap-4 items-center btnn">

@@ -24,7 +24,7 @@ const ProductMan = () => {
   return (
     <div id="prouductMan" className=" w-full h-full p-8">
       <h1 className=" uppercase text-[11vw] font-extrabold text-zinc-400">
-        our proudct's
+        our proudcts
       </h1>
       <div className="box1 grid grid-cols-1 gap-y-20">
         <div className="child">
