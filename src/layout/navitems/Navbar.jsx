@@ -103,8 +103,9 @@ const Navbar = () => {
               />
             </svg>
           </div>
+          
           <div className="shoping-cart">
-            <Link to='/userProduct'>
+            <Link to="/userProduct">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
