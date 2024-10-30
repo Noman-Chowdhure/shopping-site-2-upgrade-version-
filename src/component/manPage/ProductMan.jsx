@@ -20,35 +20,22 @@ const ProductMan = () => {
         setPants(pants.slice(0, 10));
       });
   }, []);
-  console.log(outerwear);
-  // useGSAP(()=>{
-  //     gsap.from('#prouductMan',{
-  //         transform:'translate(-100%)',
-  //         opacity:0,
-  //         rotate:90,
-  //         duration:1.5,
-  //         scrollTrigger:{
-  //             trigger:"#prouductMan",
-  //             scroller:'body',
-  //             start:'top 50%',
-  //             end:"top -100%",
-  //             markers:true,
-  //         }
-  //     })
-  // },[])
 
   return (
     <div id="prouductMan" className=" w-full h-full p-8">
       <h1 className=" uppercase text-[11vw] font-extrabold text-zinc-400">
         our proudct's
       </h1>
-      <div className="box grid grid-cols-1 gap-y-20">
+      <div className="box1 grid grid-cols-1 gap-y-20">
         <div className="child">
-          <h1 className=" text-9xl uppercase text-zinc-400 font-serif text-right">
+          <h1
+            id="catego"
+            className=" text-9xl uppercase text-zinc-400 font-serif text-right"
+          >
             Outerwear
           </h1>
 
-          <div className="items grid md:grid-cols-5 grid-cols-2 justify-center justify-items-center items-center">
+          <div className="items grid md:grid-cols-5 grid-cols-2 gap-5 justify-center justify-items-center items-center">
             {outerwear.map((abc) => (
               <ProductCard key={abc.id} itmes={abc}></ProductCard>
             ))}
