@@ -6,6 +6,7 @@ import Landing from "./component/landingPage/Landing";
 import Man from "./component/manPage/Man";
 import Women from "./component/womenPage/Women";
 import Layout from "./layout/Layout";
+import UserProduct from "./component/userProduct/UserProduct";
 
 const locomotiveScroll = new LocomotiveScroll();
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
         path: "/productDetils/:id",
         element: <ProductDetils></ProductDetils>,
         loader: ({ params }) => fetch(`http://localhost:3000/man/${params.id}`),
+      },
+      {
+        path:'userProduct',
+        element:<UserProduct></UserProduct>
       },
       { path: "/admin", element: <Admin></Admin> },
     ],
