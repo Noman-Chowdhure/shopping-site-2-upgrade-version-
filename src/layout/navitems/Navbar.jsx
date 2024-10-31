@@ -113,8 +113,8 @@ const Navbar = () => {
             </svg>
           </div>
           
-          <div className="shoping-cart">
-            <p>{count}</p>
+          <div className="shoping-cart flex relative">
+            <p className=" absolute  -top-3 left-6 font-safari">{count}</p>
             <Link to="/userProduct">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
