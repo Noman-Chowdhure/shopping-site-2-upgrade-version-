@@ -1,10 +1,19 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navbar } from "../../utils/custom";
 
 const Navbar = () => {
+  const [count,setCount] = useState([]);
+  useEffect(()=>{
+    fetch('http://localhost:3000/product')
+     .then(res =>res.json())
+     .then(infor =>setCount(infor.length));
+  },[])
+
+
+
   useGSAP(() => {
     let open = document.querySelector("#open");
     let close = document.querySelector("#close");
@@ -105,6 +114,7 @@ const Navbar = () => {
           </div>
           
           <div className="shoping-cart">
+            <p>{count}</p>
             <Link to="/userProduct">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

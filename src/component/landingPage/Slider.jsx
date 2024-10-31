@@ -18,14 +18,17 @@ const Slider = () => {
         scrub: true,
         pin: true,
       },
-    });
+});
   }, []);
   return (
     <div
       id="slider"
       className=" bg-gray-100 p-8 w-full h-full grid grid-cols-1 rounded-tr-3xl rounded-tl-3xl overflow-x-hidden"
     >
-      <h1 className="md:text-[30rem] text-[10rem] font-extrabold uppercase ">
+      <h1
+        id="sliderHeading"
+        className="md:text-[30rem] font-safari text-[10rem] font-extrabold uppercase "
+      >
         exclusive
       </h1>
     </div>
