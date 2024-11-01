@@ -45,7 +45,7 @@ const Navbar = () => {
   }, []);
   return (
     <div>
-      <div className=" flex justify-between p-8 z-10">
+      <div id="navBar" className=" p-8 z-10">
         <div className="navmenu">
           <button id="open">
             <svg
@@ -95,8 +95,10 @@ const Navbar = () => {
             </nav>
           </div>
         </div>
+
+
         <div className="hero flex gap-x-4">
-          <div className="search-btn">
+          <div className="search-btn ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

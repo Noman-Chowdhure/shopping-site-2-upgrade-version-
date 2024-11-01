@@ -27,6 +27,21 @@ h1 span {
   text-shadow: rgba( 191, 179, 179, 0.554)  2px 15px ;
 
 }
+#formCard
+{
+  background-color: rgba(255, 255, 255, 0.878);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0px 15px 79px -16px black;
+  
+  margin: 0 40px;
+}
+
+#navBar
+{
+  display: flex;
+  justify-content: space-between;
+}
 #heros p {
   writing-mode: tb-rl;
   -webkit-transform: rotate(90deg);

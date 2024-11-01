@@ -1,76 +1,41 @@
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useLoaderData } from "react-router-dom";
+
 const UserProduct = () => {
   const userData = useLoaderData();
-  const [total, setTotal] = useState([]);
 
-  console.log(userData);
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
+
   const onSubmit = (data) => console.log(data);
+
+  // Calculate the total price
+  const totalPrice = userData.reduce((total, abc) => total + abc.price, 0);
+
   return (
     <div className="items grid grid-cols-3 gap-10">
-      <div className=" grid grid-cols-1 col-span-2 gap-3 ">
+      <div className="grid grid-cols-1 col-span-2 gap-3">
         {userData.map((abc) => (
           <Items key={abc._id} pro={abc}></Items>
         ))}
       </div>
-      <div className="conform border-l-[1px] border-zinc-600  ps-10">
-        <h1 className=" font-serif uppercase text-3xl  text-zinc-500">
-          conform your order here..
+
+      <div className="conform border-l-[1px] border-zinc-600 ps-10">
+        <h1 className="font-serif uppercase text-3xl my-5 text-zinc-500">
+          Confirm your order here..
         </h1>
-        <form action="" className=" grid grid-cols-1 gap-y-6">
-          <input className=" border-b-[1px] outline-none border-zinc-700 bg-transparent ps-4"
-            {...register("firstName", { required: true })}
-            aria-invalid={errors.firstName ? "true" : "false"}
-          />
-          {errors.firstName?.type === "required" && (
-            <p role="alert">First name is required</p>
-          )}
-          <input className=" border-b-[1px] outline-none border-zinc-700 bg-transparent ps-4"
-            {...register("lastName", { required: true })}
-            aria-invalid={errors.lastName ? "true" : "false"}
-          />
-          {errors.lastName?.type === "required" && (
-            <p role="alert">last name is required</p>
-          )}
-          <p>total product:</p>
-          <p>total price:</p>
-          <input className=" border-b-[1px] outline-none border-zinc-700 bg-transparent ps-4"
-            {...register("mail", { required: "Email Address is required" })}
-            aria-invalid={errors.mail ? "true" : "false"}
-          />
-          {errors.mail && <p role="alert">{errors.mail?.message}</p>}
 
-          <input className=" border-b-[1px] outline-none border-zinc-700 bg-transparent ps-4"
-            {...register("location", {
-              required: "locaion Address is required",
-            })}
-            aria-invalid={errors.location ? "true" : "false"}
-          />
-          {errors.mail && <p role="alert">{errors.location?.message}</p>}
-
-          <input className=" border-b-[1px] outline-none border-zinc-700 bg-transparent ps-4"
-            {...register("district", { required: "Email Address is required" })}
-            aria-invalid={errors.district ? "true" : "false"}
-          />
-          {errors.district && <p role="alert">{errors.district?.message}</p>}
-
-          <input className=" border-b-[1px] outline-none border-zinc-700 bg-transparent ps-4"
-            {...register("number", { required: "Email Address is required" })}
-            aria-invalid={errors.number ? "true" : "false"}
-          />
-          {errors.number && <p role="alert">{errors.number?.message}</p>}
-          <input className=" border-b-[1px] outline-none border-zinc-700 bg-transparent ps-4"
-            {...register("mail", { required: "Email Address is required" })}
-            aria-invalid={errors.mail ? "true" : "false"}
-          />
-          {errors.mail && <p role="alert">{errors.mail?.message}</p>}
-        </form>
+        <div className="sama space-y-5 font-serif">
+          <p>Total Product: {userData.length}</p>
+          <p>
+            Total Price:{" "}
+            <span className=" text-4xl">${totalPrice.toFixed(2)}</span>
+          </p>
+        </div>
+        <button className=" btnn">order now..</button>
       </div>
     </div>
   );
@@ -78,33 +43,28 @@ const UserProduct = () => {
 
 const Items = ({ pro }) => {
   const { name, price, color, _id, image } = pro;
-  let pri = price;
-  let sum = 0;
-  for (let i = 0; i < pri.length; i++) {
-    sum += pri;
-  }
-  console.log(sum);
 
-  const handlDelet = (para) => {
-    console.log(para);
-    fetch(`http://localhost:3000/product/${para}`, {
+  const handleDelete = (id) => {
+    console.log(id);
+    fetch(`http://localhost:3000/product/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
       },
     })
       .then((res) => res.json())
-      .then((delt) => {
-        console.log(delt);
+      .then((deleted) => {
+        console.log(deleted);
       });
   };
+
   return (
-    <div className=" grid grid-cols-5 items-center justify-center justify-items-center">
-      <img className=" w-20 mix-blend-darken" src={image} alt="" />
+    <div className="grid grid-cols-5 items-center justify-center justify-items-center">
+      <img className="w-20 mix-blend-darken" src={image} alt={name} />
       <h1>{name}</h1>
-      <p>{price}</p>
+      <p>${price.toFixed(2)}</p> {/* Assuming price is a number */}
       <p>{color}</p>
-      <button onClick={() => handlDelet(_id)}>
+      <button onClick={() => handleDelete(_id)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
