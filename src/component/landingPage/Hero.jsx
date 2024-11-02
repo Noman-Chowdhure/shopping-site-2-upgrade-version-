@@ -32,7 +32,7 @@ const Hero = () => {
     });
   }, []);
   return (
-    <div className=" relative">
+    <div className=" relative -z-10">
       <div
         id="fuck"
         className="w-full h-screen grid justify-center items-center -z-10"
@@ -41,11 +41,6 @@ const Hero = () => {
           <h1 className="capitalize font-mono text-5xl md:text-[10rem]">
             e-shopping
           </h1>
-          <img
-            className=" -z-10 absolute top-0 left-0 mix-blend-darken"
-            src="https://i.pinimg.com/564x/aa/7b/e3/aa7be33cd08f60f763b6cb0b35fd34e7.jpg"
-            alt=""
-          />
         </div>
       </div>
       <div

@@ -6,6 +6,7 @@ import Category from "./Category";
 import Clint from "./Clint";
 import Fotter from "../shread/Fotter";
 
+
 const Landing = () => {
   return (
     <div id="landing">

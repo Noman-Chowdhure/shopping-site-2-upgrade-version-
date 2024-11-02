@@ -24,9 +24,20 @@ h1 span {
 #sliderHeading
 {
   color: rgba(0, 0, 0, 0.903);
-  text-shadow: rgba( 191, 179, 179, 0.554)  2px 15px ;
+  text-shadow: rgba(255, 255, 255, 0.554)  2px 15px ;
 
 }
+
+
+#sama
+{
+  background-color: rgba(232, 232, 232, 0.174);
+  backdrop-filter: blur(10px);
+  border-radius:0% 0% 10% 10% ;
+}
+
+
+
 #formCard
 {
   background-color: rgba(255, 255, 255, 0.878);
@@ -58,6 +69,7 @@ h1 span {
   text-transform: uppercase;
   opacity: 0.2;
   font-weight: bolder;
+  z-index: -3;
 }
 
 .vertical {

@@ -20,16 +20,6 @@ const About = () => {
       },
     });
 
-    gsap.to("#topNav",{
-      scale:4.0,
-      scrollTrigger:{
-        trigger:'#topNav',
-        scroller:'body',
-        start:"top 60%",
-        end:"top -100%",
-        scrub:true
-      }
-    })
     gsap.from("#ol li", {
       x: -300,
       opacity: 0,
@@ -52,7 +42,10 @@ const About = () => {
         we make sure your product & creation deliverd porperly...
       </h1>
 
-      <div id="content" className=" w-full h-fit grid grid-cols-2 md:gird-cols-1 gap-10 justify-center justify-items-center">
+      <div
+        id="content"
+        className=" w-full h-fit grid grid-cols-2 md:gird-cols-1 gap-10 justify-center justify-items-center"
+      >
         <div className="eyes max-sm:hidden">
           <h1 className=" uppercase font-serif border-b-2 text-xl">about us</h1>
           <Eyes></Eyes>
